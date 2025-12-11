@@ -141,7 +141,7 @@ export const CalculatorForm: React.FC<CalculatorFormProps> = ({ selectedService,
         Swal.fire({
             icon: 'success',
             title: 'Guardado',
-            text: 'Registro guardado en Supabase.',
+            text: 'Registro guardado.',
             timer: 2000,
             showConfirmButton: false
         });
@@ -317,6 +317,11 @@ export const CalculatorForm: React.FC<CalculatorFormProps> = ({ selectedService,
                                 ${result.backPayRounded.toLocaleString()}
                             </div>
                         </div>
+                    </div>
+
+                    <div className="mt-4 pt-4 border-t border-gray-700 flex justify-between items-center text-sm opacity-80">
+                        <span>Consumo Total:</span>
+                        <span className="font-mono font-bold">{streetDiff} {unit}</span>
                     </div>
 
                     {(internalDiff > streetDiff) && (
