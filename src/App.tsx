@@ -7,7 +7,7 @@ import { useHistory } from './hooks/useHistory';
 import type { ServiceType } from './types';
 import { Receipt, LogOut } from 'lucide-react';
 
-export const APP_VERSION = '1.0.1+supabase';
+export const APP_VERSION = '1.0.2';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
